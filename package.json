@@ -1,0 +1,19 @@
+{
+  "name": "joseto",
+  "version": "1.0.0",
+  "description": "Un bot para Discord con diferentes utilidades",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kabi404/Joseto.git"
+  },
+  "author": "Javier Parada Tallante <kabi404@outlook.com> (https://www.kabi404.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kabi404/Joseto/issues"
+  },
+  "homepage": "https://github.com/kabi404/Joseto#readme"
+}
