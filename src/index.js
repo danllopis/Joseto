@@ -8,8 +8,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
     console.log(message.content);
+
     if(message.content === '!test') {
-        message.reply('Si puedes leer esto significa que sigo vivo.');
+        message.channel.send('Si podeis leer esto significa que sigo vivo.');
     }
 });
 
