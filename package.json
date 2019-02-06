@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kabi404/Joseto/issues"
   },
-  "homepage": "https://github.com/kabi404/Joseto#readme"
+  "homepage": "https://github.com/kabi404/Joseto#readme",
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  }
 }
