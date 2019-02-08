@@ -29,7 +29,6 @@ let getMaxPriorityRoutines = routines => {
 
 let exectuteRoutines = (sentData, routines) => {
 
-    console.log(routines);
     for(var i = 0; i < routines.length; i++) {
         routines[i].exec(sentData);
     }
