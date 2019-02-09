@@ -16,16 +16,18 @@ module.exports =
             var operations = '';
             const args = sentMsg.content.split(' ');
 
-            const diceMaxValue = parseInt(args[1]) | 100;
-            const offset = parseInt(args[2]) | 0;
-            const diceNum = parseInt(args[3]) | 1;
+            const diceMaxValue = parseInt(args[1]) || 100;
+            const offset = parseInt(args[2]) || 0;
+            const diceNum = parseInt(args[3]) || 1;
+
+            console.log(
+                parseInt(args[1])
+            );
 
             var result = 0;
 
             for(var i = 0; i < diceNum; i++) {
-                var diceRes = Math.floor(
-                    Math.random() * diceMaxValue + 1
-                );
+                var diceRes = Math.floor(Math.random() * diceMaxValue) + 1;
                 if(i != 0)
                     operations += ' + '
                 operations += ` [${diceRes}]`;
