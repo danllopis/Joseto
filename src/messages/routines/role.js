@@ -13,11 +13,29 @@ module.exports =
             return args[0] === '$dice';
         },
         exec: sentMsg => {
-            var values = sentMsg.content.split(" ");
-            var diceMaxValue = parseInt(values[1]);
+            var operations = '';
+            const args = sentMsg.content.split(' ');
+
+            const diceMaxValue = parseInt(args[1]) | 100;
+            const offset = parseInt(args[2]) | 0;
+            const diceNum = parseInt(args[3]) | 1;
+
+            var result = 0;
+
+            for(var i = 0; i < diceNum; i++) {
+                var diceRes = Math.floor(
+                    Math.random() * diceMaxValue + 1
+                );
+                if(i != 0)
+                    operations += ' + '
+                operations += ` [${diceRes}]`;
+                result += diceRes
+            }
             
-            var answer = Math.random() * (diceMaxValue - 1) + 1 ;
-            sentMsg.reply(Math.floor(answer));
+            operations += ` + ${offset}`;
+            result += offset;
+
+            sentMsg.reply(result + ` = ${operations}`);
         },
         errorMsg: ''
     }
