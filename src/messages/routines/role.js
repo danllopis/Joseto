@@ -1,5 +1,5 @@
 
-module.exports = 
+module.exports =
 
 [
     {
@@ -7,17 +7,17 @@ module.exports =
         type: 'COMMAND',
         description: 'Lanza un dado con el valor máximo indicado.',
         command: '$dice',
-        priority: 0,
-        condition: sentData => {
-            var command = sentData.content.substring(0, 5);
-            return command === '$dice';
+        priority: 1,
+        condition: sentMsg => {
+            var args = sentMsg.content.split(' ');
+            return args[0] === '$dice';
         },
-        exec: sentData => {
-            var values = sentData.content.split(" ");
+        exec: sentMsg => {
+            var values = sentMsg.content.split(" ");
             var diceMaxValue = parseInt(values[1]);
             
             var answer = Math.random() * (diceMaxValue - 1) + 1 ;
-            sentData.reply(Math.floor(answer));
+            sentMsg.reply(Math.floor(answer));
         },
         errorMsg: ''
     }

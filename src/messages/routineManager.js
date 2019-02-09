@@ -1,9 +1,9 @@
 
-let getActivatedRoutines = (sentData, routines) => {
+let getActivatedRoutines = (sentMsg, routines) => {
     var activatedRoutines = [];
 
     for (var i = 0; i < routines.length; i++) {
-        if(routines[i].condition(sentData))
+        if(routines[i].condition(sentMsg))
             activatedRoutines.push(routines[i]);
     }
 
@@ -27,16 +27,20 @@ let getMaxPriorityRoutines = routines => {
     return maxPriorityRoutines;
 };
 
-let exectuteRoutines = (sentData, routines) => {
+let exectuteRoutines = (sentMsg, routines) => {
 
     for(var i = 0; i < routines.length; i++) {
-        routines[i].exec(sentData);
+        routines[i].exec(sentMsg);
     }
 
 }
 
 module.exports = {
+
     getActivatedRoutines,
     getMaxPriorityRoutines,
     exectuteRoutines
+
 };
+
+//TODO: Cambiar bucles for por map()
