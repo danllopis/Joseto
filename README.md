@@ -25,14 +25,6 @@ npm test
 npm install
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ## Built With
 
 * [Node.js](https://nodejs.org/) - Runtime Environment.
@@ -73,10 +65,4 @@ See also the list of [contributors](https://github.com/kabi404/Joseto/contributo
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
 
