@@ -54,21 +54,21 @@ Give an example
 
 * [Node.js](https://nodejs.org/) - Runtime Environment.
 * [npm](https://www.npmjs.com/) - Dependency Management.
-* [JavaScript](hhttps://www.javascript.com/) - Programming Language.
+* [JavaScript](https://www.javascript.com/) - Programming Language.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/kabi404/Joseto/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Javier Parada** - *Software structure* - [kabi404](https://github.com/kabi404)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/kabi404/Joseto/contributors) who participated in this project.
 
 ## License
 
