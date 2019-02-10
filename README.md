@@ -47,15 +47,15 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
             <a href="https://github.com/kabi404"><img src="https://avatars3.githubusercontent.com/u/19194763?s=460&v=4"
                     width="100px;" height="100px;" alt="kabi404" /><br /><sub><b>kabi404</b></sub></a>
                 <br/>
-                <a title="Ideas">🤔</a>
-                <a title="Code">💻</a>
-                <a title="Structure">📐</a>
+                <a href="#" title="Ideas">🤔</a>
+                <a href="#" title="Code">💻</a>
+                <a href="#" title="Structure">📐</a>
         </td>
         <td>
             <a href="https://github.com/danllopis"><img src="https://avatars2.githubusercontent.com/u/18395870?s=460&v=4"
                     width="100px;" height="100px;" alt="danllopis" /><br /><sub><b>danllopis</b></sub></a>
                 <br/>
-                <a title="Code">💻</a>
+                <a href="#" title="Code">💻</a>
         </td>
     </tr>
 </table>
