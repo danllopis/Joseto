@@ -19,28 +19,11 @@ npm test
 ### Prerequisites
 
 * [**Node.js**](https://nodejs.org/) - JavaScript runtime environment.
+* Install dependencies.
 
+```Shell
+npm install
 ```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ### And coding style tests
 
@@ -66,7 +49,24 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Javier Parada** - *Software structure* - [kabi404](https://github.com/kabi404)
+<table cellspacing="0" cellpadding="1">
+    <tr>
+        <td>
+            <a href="https://github.com/kabi404"><img src="https://avatars3.githubusercontent.com/u/19194763?s=460&v=4"
+                    width="100px;" height="100px;" alt="kabi404" /><br /><sub><b>kabi404</b></sub></a>
+                <br/>
+                <a title="Ideas">🤔</a>
+                <a title="Code">💻</a>
+                <a title="Structure">📐</a>
+        </td>
+        <td>
+            <a href="https://github.com/danllopis"><img src="https://avatars2.githubusercontent.com/u/18395870?s=460&v=4"
+                    width="100px;" height="100px;" alt="danllopis" /><br /><sub><b>danllopis</b></sub></a>
+                <br/>
+                <a title="Code">💻</a>
+        </td>
+    </tr>
+</table>
 
 See also the list of [contributors](https://github.com/kabi404/Joseto/contributors) who participated in this project.
 
