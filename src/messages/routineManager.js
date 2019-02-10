@@ -42,5 +42,3 @@ module.exports = {
     exectuteRoutines
 
 };
-
-//TODO: Cambiar bucles for por map()
