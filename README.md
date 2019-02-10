@@ -18,7 +18,7 @@ npm test
 
 ### Prerequisites
 
-* [**Node.js**](https://nodejs.org/) - JavaScript runtime environment.
+* [Node.js](https://nodejs.org/) - JavaScript runtime environment.
 * Install dependencies.
 
 ```Shell
