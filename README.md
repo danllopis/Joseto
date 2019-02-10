@@ -49,7 +49,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
                 <br/>
                 <a href="#" title="Ideas">🤔</a>
                 <a href="#" title="Code">💻</a>
-                <a href="#" title="Structure">📐</a>
+                <a href="#" title="Software Design">📐</a>
         </td>
         <td>
             <a href="https://github.com/danllopis"><img src="https://avatars2.githubusercontent.com/u/18395870?s=460&v=4"
