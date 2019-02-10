@@ -22,7 +22,7 @@ module.exports =
                 if(args[it].toLowerCase().includes('d'))
                 {
                     if(operations != ''){
-                        operations += ' + ';
+                        operations += ' ++';
                     }
                     var dice = args[it].split('d');
                     var diceNum = parseInt(dice[0]);
@@ -31,14 +31,20 @@ module.exports =
                     for(var i = 0; i < diceNum; i++) {
                         var diceRes = Math.floor(Math.random() * diceMaxValue) + 1;
                         if(i != 0)
-                            operations += ' + '
+                            operations += ' +'
                         operations += ` [${diceRes}]`;
                         result += diceRes
                     }
 
                 } else {                  
                     var offset = parseInt(args[it]) || 0;
-                    operations += ` + ${offset}`;
+                    if(offset < 0 ){
+                        operations += ` - ${Math.abs(offset)}`;
+                    } else {
+                        operations += ` + ${offset}`;
+                    }
+
+                    
                     result += offset;
 
                 }
