@@ -14,29 +14,41 @@ module.exports =
         },
         exec: sentMsg => {
             var operations = '';
-            const args = sentMsg.content.split(' ');
-
-            const diceMaxValue = parseInt(args[1]) || 100;
-            const offset = parseInt(args[2]) || 0;
-            const diceNum = parseInt(args[3]) || 1;
-
-            console.log(
-                parseInt(args[1])
-            );
+            const args = sentMsg.content.match(/\S+/g);
 
             var result = 0;
 
-            for(var i = 0; i < diceNum; i++) {
-                var diceRes = Math.floor(Math.random() * diceMaxValue) + 1;
-                if(i != 0)
-                    operations += ' + '
-                operations += ` [${diceRes}]`;
-                result += diceRes
-            }
-            
-            operations += ` + ${offset}`;
-            result += offset;
+            for(var it = 1; it<args.length; it++){
+                if(args[it].toLowerCase().includes('d'))
+                {
+                    if(operations != ''){
+                        operations += ' ++';
+                    }
+                    var dice = args[it].split('d');
+                    var diceNum = parseInt(dice[0]);
+                    var diceMaxValue = parseInt(dice[1]);
 
+                    for(var i = 0; i < diceNum; i++) {
+                        var diceRes = Math.floor(Math.random() * diceMaxValue) + 1;
+                        if(i != 0)
+                            operations += ' +'
+                        operations += ` [${diceRes}]`;
+                        result += diceRes
+                    }
+
+                } else {                  
+                    var offset = parseInt(args[it]) || 0;
+                    if(offset < 0 ){
+                        operations += ` - ${Math.abs(offset)}`;
+                    } else {
+                        operations += ` + ${offset}`;
+                    }
+
+                    
+                    result += offset;
+
+                }
+            }            
             sentMsg.reply(result + ` = ${operations}`);
         },
         errorMsg: ''
