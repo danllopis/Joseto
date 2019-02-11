@@ -63,32 +63,36 @@ module.exports =
                 return args[0] === '$coin';
             },
             exec: sentMsg => {
-                var msg = '';
+                //Variables del método.
                 var args = sentMsg.content.split(' ');
-                var numCaras = 0;
-                var numCruz = 0;
-                var cantoText = '';
-                var numCanto = 0;
-                var numCoinFlips = parseInt(args[1]) || 1;
 
-                for (var i = 0; i < numCoinFlips; i++) {
+                var resumeData = {
+                    msg : '',
+                    faceNum : 0,
+                    crossNum : 0,
+                    cantoText : '',
+                    cantoNum : 0,
+                    coinFlipsNum : parseInt(args[1]) || 1
+                }                
+
+                for (var i = 0; i < resumeData.coinFlipsNum; i++) {
                     var result = Math.floor(Math.random() * 6002);
 
                     if (result < 3000) {
-                        msg += `${i + 1}.Cara\n`;
-                        numCaras++;
+                        resumeData.msg += `${i + 1}.Cara\n`;
+                        resumeData.faceNum++;
                     } else if (result >= 3000 && result < 6001) {
-                        msg += `${i + 1}.Cruz\n`;
-                        numCruz++;
+                        resumeData.msg += `${i + 1}.Cruz\n`;
+                        resumeData.crossNum++;
                     } else {
-                        msg += `${i + 1}.¡HA SALIDO DE CANTO LOL!\n`;
-                        numCanto++;
-                        (numCanto != 1) ? cantoText = `, Han salido de canto ${numCanto} tiradas` : cantoText = `, Ha salido de canto ${numCanto} tirada`;
+                        resumeData.msg += `${i + 1}.¡HA SALIDO DE CANTO LOL!\n`;
+                        resumeData.cantoNum++;
+                        (resumeData.cantoNum != 1) ? resumeData.cantoText = `, Han salido de canto ${resumeData.cantoNum} tiradas` : resumeData.cantoText = `, Ha salido de canto ${resumeData.cantoNum} tirada`;
                     }
                 }
 
-                msg += `Resumen de ${numCoinFlips} tiradas. Cara: ${numCaras}, Cruz: ${numCruz}${cantoText}`
-                sentMsg.reply(msg);
+                resumeData.msg += `Resumen de ${resumeData.coinFlipsNum} tiradas. Cara: ${resumeData.faceNum}, Cruz: ${resumeData.crossNum}${resumeData.cantoText}`
+                sentMsg.reply(resumeData.msg);
             },
             errorMsg: ''
         }
