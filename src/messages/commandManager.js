@@ -29,6 +29,11 @@ let getMaxPriorityRoutines = routines => {
 
 let exectuteRoutines = (sentMsg, routines) => {
 
+    sentMsg.args = sentMsg.content.substr(
+                            sentMsg.content.indexOf(" ") + 1);
+    if(sentMsg.args === sentMsg.content)
+        sentMsg.args = '';
+
     for(var i = 0; i < routines.length; i++) {
         routines[i].exec(sentMsg);
     }
