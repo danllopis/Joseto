@@ -64,8 +64,8 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
                 <a href="#" title="Code">💻</a>
         </td>
         <td>
-            <a href="http://www.kabi404.me/Joseto/"><img src="https://raw.githubusercontent.com/kabi404/Joseto/master/static/img/joseto.png"
-                    width="70px;" height="100px;" alt="joseto" /><br /><sub><b>Joseto</b></sub></a>
+            <a href="http://www.kabi404.me/Joseto/"><img src="https://art.pixilart.com/17a87820b9133a3.png"
+                    width="100px;" height="100px;" alt="joseto" /><br /><sub><b>Joseto</b></sub></a>
                 <br/>
             <a href="#" title="Testing">🛠</a>
         </td>
