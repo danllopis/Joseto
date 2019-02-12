@@ -1,18 +1,20 @@
 module.exports = {
     commands: [
         {
-            name: 'dice',
-            type: 'COMMAND',
-            description: 'Lanza un dado con el valor máximo indicado.',
-            command: '$dice',
-            priority: 1,
-            condition: sentMsg => {
-
-            },
+            name: 'NOMBRE DEL COMANDO',
+            description: 'DESCRIPCION DE LO QUE HACE EL COMANDO.',
+            command: 'COMANDO (SIN TOKEN)',
+            parameters: [
+                {
+                    name: 'NOMBRE DEL PARAMETRO',
+                    descripcion: '',
+                    sample: ''
+                }
+            ],
+            priority: 0,
             exec: sentMsg => {
 
-            },
-            errorMsg: ''
+            }
         }
     ],
     reacts: []
