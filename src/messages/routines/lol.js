@@ -18,33 +18,40 @@ module.exports =
             exec: async sentMsg => {
                 var args = sentMsg.content.split(' ');
                 var summonerSearch = args[1];
-                var summonerName = args[1];
                 for(var i = 2; i<args.length;i++){
                     summonerSearch+=`%20${args[i]}`;
-                    summonerName+= ` ${args[i]}`;
                 }
                 var summonerID;
+                var summonerName;
                 var summonerlv;
-                var summonerWR;
-                var summonerLeague;
-                var summonerRank;
+                var summonerWR = '';
+                var summonerLeague = 'UNRANKED';
+                var summonerRank = '';
+                var ironquote = 'Está en el puto suelo XD';
 
                 var responseSummoner = await axios.get(`https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${summonerSearch}?api_key=${leagueApi}`);
-                console.log(responseSummoner.data);
                 summonerID = responseSummoner.data.id;
+                summonerName = responseSummoner.data.name;                
                 summonerlv = responseSummoner.data.summonerLevel;
 
                 var responseLeague = await axios.get(`https://euw1.api.riotgames.com/lol/league/v4/positions/by-summoner/${summonerID}?api_key=${leagueApi}`);
             
-                summonerLeague = responseLeague.data[0].tier;
-                summonerWR = (((responseLeague.data[0].wins) / (responseLeague.data[0].wins + responseLeague.data[0].losses)) * 100).toFixed(2);
-                summonerRank = responseLeague.data[0].rank;
-
+                console.log(responseLeague.data)
+                if(responseLeague.data.length != 0){
+                    summonerLeague = responseLeague.data[0].tier;
+                    summonerRank = responseLeague.data[0].rank;
+                    summonerWR = `${(((responseLeague.data[0].wins) / (responseLeague.data[0].wins + responseLeague.data[0].losses)) * 100).toFixed(2)}%`;
+                }                
+                
                 var msg = `Nombre: ${summonerName}, 
                   Nivel: ${summonerlv}, 
-                  Winrate: ${summonerWR}%, 
+                  Winrate: ${summonerWR}, 
                   Liga: ${summonerLeague}, 
                   Rango: ${summonerRank}`;
+
+                  if(summonerLeague === 'IRON')
+                    msg += `\n${ironquote}`;
+
                 sentMsg.reply(msg);
             },
             errorMsg: ''
