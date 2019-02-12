@@ -1,8 +1,6 @@
+module.exports = {
 
-module.exports =
-
-    [
-        {
+    commands: [{
             name: 'dice',
             type: 'COMMAND',
             description: 'Lanza un dado con el valor máximo indicado.',
@@ -67,13 +65,13 @@ module.exports =
                 var args = sentMsg.content.split(' ');
 
                 var resumeData = {
-                    msg : '',
-                    faceNum : 0,
-                    crossNum : 0,
-                    cantoText : '',
-                    cantoNum : 0,
-                    coinFlipsNum : parseInt(args[1]) || 1
-                }                
+                    msg: '',
+                    faceNum: 0,
+                    crossNum: 0,
+                    cantoText: '',
+                    cantoNum: 0,
+                    coinFlipsNum: parseInt(args[1]) || 1
+                }
 
                 for (var i = 0; i < resumeData.coinFlipsNum; i++) {
                     var result = Math.floor(Math.random() * 6002);
@@ -87,7 +85,7 @@ module.exports =
                     } else {
                         resumeData.msg += `${i + 1}.¡HA SALIDO DE CANTO LOL!\n`;
                         resumeData.cantoNum++;
-                        (resumeData.cantoNum != 1) ? resumeData.cantoText = `, Han salido de canto ${resumeData.cantoNum} tiradas` : resumeData.cantoText = `, Ha salido de canto ${resumeData.cantoNum} tirada`;
+                        (resumeData.cantoNum != 1) ? resumeData.cantoText = `, Han salido de canto ${resumeData.cantoNum} tiradas`: resumeData.cantoText = `, Ha salido de canto ${resumeData.cantoNum} tirada`;
                     }
                 }
 
@@ -96,4 +94,8 @@ module.exports =
             },
             errorMsg: ''
         }
-    ];
+    ],
+
+
+    reacts: []
+};

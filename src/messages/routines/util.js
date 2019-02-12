@@ -1,8 +1,5 @@
-
-module.exports = 
-
-[
-    {
+module.exports = {
+    commands: [{
         name: 'clear',
         type: 'COMMAND',
         description: 'Clear history',
@@ -17,5 +14,7 @@ module.exports =
                 });
         },
         errorMsg: ''
-    }
-];
+    }],
+
+    reacts: []
+};

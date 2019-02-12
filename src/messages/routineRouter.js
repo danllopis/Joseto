@@ -1,10 +1,14 @@
 
-var allRoutines = [];
+var allCommands = [];
+var allReacts = [];
 
-allRoutines = allRoutines.concat(require('./routines/role'));
-allRoutines = allRoutines.concat(require('./routines/system'));
-allRoutines = allRoutines.concat(require('./routines/util'));
-allRoutines = allRoutines.concat(require('./routines/fun'));
+allCommands = allCommands.concat(require('./routines/role').commands);
+allCommands = allCommands.concat(require('./routines/system').commands);
+allCommands = allCommands.concat(require('./routines/util').commands);
+allCommands = allCommands.concat(require('./routines/fun').commands);
 
-module.exports = allRoutines;
+module.exports = {
+    allCommands,
+    allReacts
+}
 
