@@ -20,7 +20,11 @@
   "dependencies": {
     "axios": "^0.18.0",
     "discord.js": "^11.4.2",
-    "mathjs": "^5.4.2"
+    "ffmpeg": "0.0.4",
+    "mathjs": "^5.4.2",
+    "node-opus": "^0.3.1",
+    "npm": "^6.7.0",
+    "ytdl-core": "^0.29.1"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
