@@ -2,6 +2,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+const {DISCORD_API_KEY} = require('./config/config');
+
 const messageScheduler = require('./messages/messageScheduler');
 
 client.on('ready', () => {
@@ -14,4 +16,4 @@ client.on('message', message => {
 
 });
 
-client.login('');
+client.login(DISCORD_API_KEY);
