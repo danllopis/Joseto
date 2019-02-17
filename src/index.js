@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 const {DISCORD_API_KEY} = require('./config/config');
 
-const messageScheduler = require('./messages/messageScheduler');
+const messageScheduler = require('./eventHandlers/msg/messageScheduler');
 
 client.on('ready', () => {
     console.log(`Bot is ready as ${client.user.tag}!`);

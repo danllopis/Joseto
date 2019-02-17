@@ -26,7 +26,7 @@ module.exports = {
                 if (sentMsg.content === '$doc') {
                     sentMsg.reply('Aquí tienes un enlace con todos los comandos: https://github.com/kabi404/Joseto/wiki');
                 } else {
-                    const commandList = require('../routineRouter.js');
+                    const commandList = require('../../eventHandlers/msg/routineRouter');
                     const args = sentMsg.content.match(/\S+/g);
                     var iterator = 0;
 
