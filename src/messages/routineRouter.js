@@ -1,13 +1,17 @@
 
+const root = require('app-root-path');
+const fileReader = require("fs");
+
 var allCommands = [];
 var allReacts = [];
 
-allCommands = allCommands.concat(require('./routines/role').commands);
-allCommands = allCommands.concat(require('./routines/system').commands);
-allCommands = allCommands.concat(require('./routines/util').commands);
-allCommands = allCommands.concat(require('./routines/fun').commands);
-allCommands = allCommands.concat(require('./routines/lol').commands);
-allCommands = allCommands.concat(require('./routines/math').commands);
+var normalizedPath = root + '/src/routines/msg/'
+
+fileReader.readdirSync(normalizedPath).forEach(function(fileName) {
+    fileName = fileName.replace(/\.[^/.]+$/, "");
+    allCommands = allCommands.concat(require(normalizedPath + fileName).commands);
+    allReacts = allReacts.concat(require(normalizedPath + fileName).reacts);
+});
 
 module.exports = {
     allCommands,
