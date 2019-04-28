@@ -2,6 +2,7 @@
 
 [![](https://img.shields.io/github/license/kabi404/kanami.svg?style=flat-square)](https://github.com/kabi404/Joseto/blob/master/LICENSE)
 ![](https://img.shields.io/badge/version-1.0-green.svg?style=flat-square)
+[![CodeFactor](https://www.codefactor.io/repository/github/kabi404/joseto/badge?style=flat-square)](https://www.codefactor.io/repository/github/kabi404/joseto)
 ![](https://img.shields.io/badge/PRs-welcome-green.svg?style=flat-square)
 
 Discord modular Bot with different utilities for different purposes. Made for fun. 
