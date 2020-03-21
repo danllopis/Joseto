@@ -1,8 +1,7 @@
 # Joseto
 
-[![](https://img.shields.io/github/license/kabi404/kanami.svg?style=flat-square)](https://github.com/kabi404/Joseto/blob/master/LICENSE)
+[![](https://img.shields.io/github/license/habinari/kanami.svg?style=flat-square)](https://github.com/habinari/Joseto/blob/master/LICENSE)
 ![](https://img.shields.io/badge/version-1.0-green.svg?style=flat-square)
-[![CodeFactor](https://www.codefactor.io/repository/github/kabi404/joseto/badge?style=flat-square)](https://www.codefactor.io/repository/github/kabi404/joseto)
 ![](https://img.shields.io/badge/PRs-welcome-green.svg?style=flat-square)
 
 Discord modular Bot with different utilities for different purposes. Made for fun. 
@@ -42,15 +41,15 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/kabi404/Joseto/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/habinari/Joseto/tags). 
 
 ## Contributors
 
 <table cellspacing="0" cellpadding="1">
     <tr>
         <td>
-            <a href="https://github.com/kabi404"><img src="https://avatars3.githubusercontent.com/u/19194763?s=460&v=4"
-                    width="100px;" height="100px;" alt="kabi404" /><br /><sub><b>kabi404</b></sub></a>
+            <a href="https://github.com/habinari"><img src="https://avatars3.githubusercontent.com/u/19194763?s=460&v=4"
+                    width="100px;" height="100px;" alt="habinari" /><br /><sub><b>Javier Parada</b></sub></a>
                 <br/>
                 <a href="#" title="Ideas">🤔</a>
                 <a href="#" title="Code">💻</a>
@@ -59,13 +58,13 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
         </td>
         <td>
             <a href="https://github.com/danllopis"><img src="https://avatars2.githubusercontent.com/u/18395870?s=460&v=4"
-                    width="100px;" height="100px;" alt="danllopis" /><br /><sub><b>danllopis</b></sub></a>
+                    width="100px;" height="100px;" alt="danllopis" /><br /><sub><b>Daniel Llopis</b></sub></a>
                 <br/>
                 <a href="#" title="Ideas">🤔</a>
                 <a href="#" title="Code">💻</a>
         </td>
         <td>
-            <a href="http://www.kabi404.me/Joseto/"><img src="https://art.pixilart.com/17a87820b9133a3.png"
+            <a href="http://www.javierparada.dev/Joseto/"><img src="https://art.pixilart.com/17a87820b9133a3.png"
                     width="100px;" height="100px;" alt="joseto" /><br /><sub><b>Joseto</b></sub></a>
                 <br/>
             <a href="#" title="Testing">🛠</a>
@@ -73,7 +72,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
     </tr>
 </table>
 
-See also the list of [contributors](https://github.com/kabi404/Joseto/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/habinari/Joseto/contributors) who participated in this project.
 
 ## License
 
